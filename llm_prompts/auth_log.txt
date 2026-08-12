@@ -1,0 +1,1 @@
+Generate ~20 lines of a realistic /var/log/auth.log from an Ubuntu 22.04 host (OpenSSH 8.9p1). Show sshd accepted publickey logins for user mgeorgiou from the admin workstation 10.20.5.42, a couple of sudo sessions, one failed password from an internal IP, and cron session openings. Timestamps around mid-April 2026. Internally consistent.

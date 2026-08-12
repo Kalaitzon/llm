@@ -1,0 +1,356 @@
+{
+  "sessions": [
+    {
+      "playbook": "recon",
+      "intent": "reconnaissance",
+      "depth": "shallow",
+      "persona_user": "admin",
+      "src_port": 64183,
+      "commands_sent": 2,
+      "timestamp": "2026-07-11T23:51:54.592438+0000"
+    },
+    {
+      "playbook": "recon",
+      "intent": "reconnaissance",
+      "depth": "shallow",
+      "persona_user": "mgeorgiou",
+      "src_port": 64184,
+      "commands_sent": 2,
+      "timestamp": "2026-07-11T23:51:57.947055+0000"
+    },
+    {
+      "playbook": "recon",
+      "intent": "reconnaissance",
+      "depth": "deep",
+      "persona_user": "mgeorgiou",
+      "src_port": 64185,
+      "commands_sent": 6,
+      "timestamp": "2026-07-11T23:52:06.344274+0000"
+    },
+    {
+      "playbook": "recon",
+      "intent": "reconnaissance",
+      "depth": "deep",
+      "persona_user": "admin",
+      "src_port": 64189,
+      "commands_sent": 7,
+      "timestamp": "2026-07-11T23:52:15.433311+0000"
+    },
+    {
+      "playbook": "recon",
+      "intent": "reconnaissance",
+      "depth": "deep_plus",
+      "persona_user": "root",
+      "src_port": 64191,
+      "commands_sent": 9,
+      "timestamp": "2026-07-11T23:52:26.409978+0000"
+    },
+    {
+      "playbook": "credential_search",
+      "intent": "credential_harvesting",
+      "depth": "shallow",
+      "persona_user": "admin",
+      "src_port": 64193,
+      "commands_sent": 3,
+      "timestamp": "2026-07-11T23:52:31.239765+0000"
+    },
+    {
+      "playbook": "credential_search",
+      "intent": "credential_harvesting",
+      "depth": "shallow",
+      "persona_user": "ubuntu",
+      "src_port": 56051,
+      "commands_sent": 1,
+      "timestamp": "2026-07-11T23:52:33.429927+0000"
+    },
+    {
+      "playbook": "credential_search",
+      "intent": "credential_harvesting",
+      "depth": "deep",
+      "persona_user": "admin",
+      "src_port": 56053,
+      "commands_sent": 6,
+      "timestamp": "2026-07-11T23:52:42.416776+0000"
+    },
+    {
+      "playbook": "credential_search",
+      "intent": "credential_harvesting",
+      "depth": "deep",
+      "persona_user": "root",
+      "src_port": 56055,
+      "commands_sent": 5,
+      "timestamp": "2026-07-11T23:52:48.780669+0000"
+    },
+    {
+      "playbook": "credential_search",
+      "intent": "credential_harvesting",
+      "depth": "deep_plus",
+      "persona_user": "root",
+      "src_port": 56057,
+      "commands_sent": 8,
+      "timestamp": "2026-07-11T23:52:59.265061+0000"
+    },
+    {
+      "playbook": "config_discovery",
+      "intent": "environment_mapping",
+      "depth": "shallow",
+      "persona_user": "mgeorgiou",
+      "src_port": 50860,
+      "commands_sent": 1,
+      "timestamp": "2026-07-11T23:53:01.698887+0000"
+    },
+    {
+      "playbook": "config_discovery",
+      "intent": "environment_mapping",
+      "depth": "shallow",
+      "persona_user": "mgeorgiou",
+      "src_port": 50861,
+      "commands_sent": 2,
+      "timestamp": "2026-07-11T23:53:05.658427+0000"
+    },
+    {
+      "playbook": "config_discovery",
+      "intent": "environment_mapping",
+      "depth": "deep",
+      "persona_user": "root",
+      "src_port": 50863,
+      "commands_sent": 4,
+      "timestamp": "2026-07-11T23:53:12.208757+0000"
+    },
+    {
+      "playbook": "config_discovery",
+      "intent": "environment_mapping",
+      "depth": "deep",
+      "persona_user": "root",
+      "src_port": 50865,
+      "commands_sent": 4,
+      "timestamp": "2026-07-11T23:53:18.283657+0000"
+    },
+    {
+      "playbook": "config_discovery",
+      "intent": "environment_mapping",
+      "depth": "deep_plus",
+      "persona_user": "mgeorgiou",
+      "src_port": 50866,
+      "commands_sent": 6,
+      "timestamp": "2026-07-11T23:53:25.744036+0000"
+    },
+    {
+      "playbook": "privilege_escalation",
+      "intent": "privilege_escalation",
+      "depth": "shallow",
+      "persona_user": "ubuntu",
+      "src_port": 50867,
+      "commands_sent": 1,
+      "timestamp": "2026-07-11T23:53:28.168974+0000"
+    },
+    {
+      "playbook": "privilege_escalation",
+      "intent": "privilege_escalation",
+      "depth": "shallow",
+      "persona_user": "mgeorgiou",
+      "src_port": 50868,
+      "commands_sent": 2,
+      "timestamp": "2026-07-11T23:53:31.744681+0000"
+    },
+    {
+      "playbook": "privilege_escalation",
+      "intent": "privilege_escalation",
+      "depth": "deep",
+      "persona_user": "admin",
+      "src_port": 50870,
+      "commands_sent": 4,
+      "timestamp": "2026-07-11T23:53:37.133888+0000"
+    },
+    {
+      "playbook": "privilege_escalation",
+      "intent": "privilege_escalation",
+      "depth": "deep",
+      "persona_user": "root",
+      "src_port": 50872,
+      "commands_sent": 5,
+      "timestamp": "2026-07-11T23:53:44.980072+0000"
+    },
+    {
+      "playbook": "privilege_escalation",
+      "intent": "privilege_escalation",
+      "depth": "deep_plus",
+      "persona_user": "mgeorgiou",
+      "src_port": 50873,
+      "commands_sent": 6,
+      "timestamp": "2026-07-11T23:53:53.574693+0000"
+    },
+    {
+      "playbook": "data_staging",
+      "intent": "data_exfiltration",
+      "depth": "shallow",
+      "persona_user": "admin",
+      "src_port": 50875,
+      "commands_sent": 2,
+      "timestamp": "2026-07-11T23:53:57.047927+0000"
+    },
+    {
+      "playbook": "data_staging",
+      "intent": "data_exfiltration",
+      "depth": "shallow",
+      "persona_user": "mgeorgiou",
+      "src_port": 50876,
+      "commands_sent": 3,
+      "timestamp": "2026-07-11T23:54:01.584154+0000"
+    },
+    {
+      "playbook": "data_staging",
+      "intent": "data_exfiltration",
+      "depth": "deep",
+      "persona_user": "root",
+      "src_port": 50878,
+      "commands_sent": 4,
+      "timestamp": "2026-07-11T23:54:07.297002+0000"
+    },
+    {
+      "playbook": "data_staging",
+      "intent": "data_exfiltration",
+      "depth": "deep",
+      "persona_user": "mgeorgiou",
+      "src_port": 50879,
+      "commands_sent": 4,
+      "timestamp": "2026-07-11T23:54:13.343932+0000"
+    },
+    {
+      "playbook": "data_staging",
+      "intent": "data_exfiltration",
+      "depth": "deep_plus",
+      "persona_user": "admin",
+      "src_port": 50881,
+      "commands_sent": 5,
+      "timestamp": "2026-07-11T23:54:20.708782+0000"
+    },
+    {
+      "playbook": "lateral_movement",
+      "intent": "lateral_movement",
+      "depth": "shallow",
+      "persona_user": "ubuntu",
+      "src_port": 50882,
+      "commands_sent": 2,
+      "timestamp": "2026-07-11T23:54:23.935513+0000"
+    },
+    {
+      "playbook": "lateral_movement",
+      "intent": "lateral_movement",
+      "depth": "shallow",
+      "persona_user": "root",
+      "src_port": 50884,
+      "commands_sent": 2,
+      "timestamp": "2026-07-11T23:54:27.469347+0000"
+    },
+    {
+      "playbook": "lateral_movement",
+      "intent": "lateral_movement",
+      "depth": "deep",
+      "persona_user": "ubuntu",
+      "src_port": 50885,
+      "commands_sent": 4,
+      "timestamp": "2026-07-11T23:54:32.983108+0000"
+    },
+    {
+      "playbook": "lateral_movement",
+      "intent": "lateral_movement",
+      "depth": "deep",
+      "persona_user": "root",
+      "src_port": 50887,
+      "commands_sent": 5,
+      "timestamp": "2026-07-11T23:54:39.510908+0000"
+    },
+    {
+      "playbook": "lateral_movement",
+      "intent": "lateral_movement",
+      "depth": "deep_plus",
+      "persona_user": "admin",
+      "src_port": 50889,
+      "commands_sent": 7,
+      "timestamp": "2026-07-11T23:54:48.898810+0000"
+    },
+    {
+      "playbook": "honeypot_fingerprinting",
+      "intent": "honeypot_detection",
+      "depth": "shallow",
+      "persona_user": "ubuntu",
+      "src_port": 50890,
+      "commands_sent": 3,
+      "timestamp": "2026-07-11T23:54:53.832559+0000"
+    },
+    {
+      "playbook": "honeypot_fingerprinting",
+      "intent": "honeypot_detection",
+      "depth": "shallow",
+      "persona_user": "root",
+      "src_port": 50892,
+      "commands_sent": 3,
+      "timestamp": "2026-07-11T23:54:58.896104+0000"
+    },
+    {
+      "playbook": "honeypot_fingerprinting",
+      "intent": "honeypot_detection",
+      "depth": "deep",
+      "persona_user": "root",
+      "src_port": 50894,
+      "commands_sent": 6,
+      "timestamp": "2026-07-11T23:55:08.099507+0000"
+    },
+    {
+      "playbook": "honeypot_fingerprinting",
+      "intent": "honeypot_detection",
+      "depth": "deep",
+      "persona_user": "admin",
+      "src_port": 50896,
+      "commands_sent": 5,
+      "timestamp": "2026-07-11T23:55:14.780514+0000"
+    },
+    {
+      "playbook": "honeypot_fingerprinting",
+      "intent": "honeypot_detection",
+      "depth": "deep_plus",
+      "persona_user": "mgeorgiou",
+      "src_port": 50897,
+      "commands_sent": 8,
+      "timestamp": "2026-07-11T23:55:25.515073+0000"
+    }
+  ],
+  "catalogue": {
+    "recon": {
+      "intent": "reconnaissance",
+      "objective": "Βασικη αναγνωριση συστηματος και ταυτοτητας.",
+      "max_commands": 9
+    },
+    "credential_search": {
+      "intent": "credential_harvesting",
+      "objective": "Αναζητηση κωδικων, κλειδιων και αρχειων ρυθμισεων.",
+      "max_commands": 8
+    },
+    "config_discovery": {
+      "intent": "environment_mapping",
+      "objective": "Χαρτογραφηση υπηρεσιων και ρυθμισεων.",
+      "max_commands": 6
+    },
+    "privilege_escalation": {
+      "intent": "privilege_escalation",
+      "objective": "Προσπαθεια ανοδου προνομιων σε root.",
+      "max_commands": 6
+    },
+    "data_staging": {
+      "intent": "data_exfiltration",
+      "objective": "Εντοπισμος και προετοιμασια δεδομενων για διαρροη.",
+      "max_commands": 5
+    },
+    "lateral_movement": {
+      "intent": "lateral_movement",
+      "objective": "Εντοπισμος και δοκιμη αλλων εσωτερικων συστηματων.",
+      "max_commands": 7
+    },
+    "honeypot_fingerprinting": {
+      "intent": "honeypot_detection",
+      "objective": "Ελεγχος για sandbox/honeypot/VM.",
+      "max_commands": 8
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "model": "RandomForestClassifier(n_estimators=300)",
+  "evaluation": "LeaveOneOut cross-validation",
+  "n_samples": 35,
+  "n_classes": 7,
+  "accuracy": 0.571,
+  "macro_f1": 0.559,
+  "feature_importance": [
+    {
+      "feature": "recon_frac",
+      "importance": 0.171
+    },
+    {
+      "feature": "read_frac",
+      "importance": 0.165
+    },
+    {
+      "feature": "dwell_time",
+      "importance": 0.165
+    },
+    {
+      "feature": "cmd_diversity",
+      "importance": 0.124
+    },
+    {
+      "feature": "artefacts_touched",
+      "importance": 0.121
+    },
+    {
+      "feature": "privesc_frac",
+      "importance": 0.095
+    },
+    {
+      "feature": "command_count",
+      "importance": 0.081
+    },
+    {
+      "feature": "path_depth",
+      "importance": 0.079
+    }
+  ],
+  "note": "Μικρο δειγμα (35 sessions) - τα αποτελεσματα ειναι ενδεικτικα και δειχνουν οτι τα behavioural features φερουν πληροφορια intent, συμπληρωνοντας το unsupervised clustering του Task 5."
+}

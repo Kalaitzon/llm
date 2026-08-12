@@ -1,0 +1,12 @@
+# /etc/cron.d/deploy  -- Internal deploy & maintenance jobs
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Nightly database backup to backup01
+0 2 * * *  backup   /opt/deploy/bin/pg_backup.sh >> /var/log/pg_backup.log 2>&1
+# Rotate application logs
+30 3 * * * root     /usr/sbin/logrotate /etc/logrotate.d/app
+# Warm the Redis cache every 15 minutes
+*/15 * * * * svc_deploy /opt/app/bin/cache_warm.sh
+# Health probe
+*/5 * * * * svc_deploy curl -fsS http://127.0.0.1:8000/health >/dev/null

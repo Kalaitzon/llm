@@ -1,0 +1,115 @@
+{
+  "counts": {
+    "total_logs": 55,
+    "command_sessions": 35,
+    "failed_auth_probes": 20
+  },
+  "behavioural_means": {
+    "dwell_time": 5.42,
+    "command_count": 5.2,
+    "cmd_diversity": 0.83,
+    "artefacts_touched": 1.14,
+    "path_depth": 2.91
+  },
+  "clustering": {
+    "kmeans_k": 4,
+    "silhouette": 0.363,
+    "cluster_vs_intent_ARI": 0.185,
+    "iso_flagged_deep": 9,
+    "ari_interpretation": "Το ARI μετρα ποσο τα unsupervised clusters συμπιπτουν με τα 7 intents. Χαμηλες τιμες σημαινουν οτι το clustering ομαδοποιει κυριως κατα ΒΑΘΟΣ/ΠΡΟΦΙΛ εμπλοκης (ρηχα probes, deep readers, privesc) και οχι κατα semantic intent - αναμενομενο, αφου τα features μετρανε συμπεριφορα. Η προβλεψη intent αντιμετωπιζεται με supervised μοντελο στο 05_intent_classifier.py."
+  },
+  "decoy_engagement": {
+    "touches_by_source": {
+      "manual": 19,
+      "llm": 21
+    },
+    "touches_by_category": {
+      "shell_history": 6,
+      "credentials": 8,
+      "ssh": 11,
+      "config": 3,
+      "system": 3,
+      "logs": 4,
+      "docs": 5
+    },
+    "top_artefacts": [
+      [
+        "/home/mgeorgiou/.ssh/known_hosts",
+        6
+      ],
+      [
+        "/home/mgeorgiou/.bash_history",
+        5
+      ],
+      [
+        "/home/mgeorgiou/.ssh/config",
+        5
+      ],
+      [
+        "/opt/app/.env",
+        4
+      ],
+      [
+        "/opt/app/config/database.yml",
+        4
+      ],
+      [
+        "/opt/app/runbooks/deploy_runbook.md",
+        4
+      ]
+    ]
+  },
+  "static_vs_decoy_baseline": {
+    "with_decoys_avg_touched": 1.14,
+    "with_decoys_max_touched": 6,
+    "minimal_static_avg_touched": 0.0,
+    "interpretation": "Σε ενα minimal στατικο περιβαλλον χωρις decoys, καμια εντολη αναγνωσης δεν θα επεστρεφε περιεχομενο, οποτε το artefacts_touched θα ηταν 0 σε ολα τα sessions. Τα decoys προκαλεσαν βαθυτερη εμπλοκη (εως 6 artefacts σε ενα session)."
+  },
+  "session_summaries": [
+    {
+      "session_id": "1845fd4c42ba",
+      "ground_truth_intent": "credential_harvesting",
+      "depth": "deep_plus",
+      "dwell_time": 9.776,
+      "commands": 9,
+      "artefacts_touched": [
+        "/home/mgeorgiou/.bash_history",
+        "/opt/app/.env",
+        "/opt/app/config/database.yml",
+        "/home/mgeorgiou/.ssh/config",
+        "/home/mgeorgiou/.ssh/known_hosts",
+        "/opt/deploy/.bash_history"
+      ],
+      "narrative": "Session με προθεση 'credential_harvesting' (deep_plus). Εκτελεσε 9 εντολες σε 9.776s, με path depth 4. Αγγιξε 6 decoys: /home/mgeorgiou/.bash_history, /opt/app/.env, /opt/app/config/database.yml, /home/mgeorgiou/.ssh/config, /home/mgeorgiou/.ssh/known_hosts, /opt/deploy/.bash_history."
+    },
+    {
+      "session_id": "96266a702a03",
+      "ground_truth_intent": "honeypot_detection",
+      "depth": "deep_plus",
+      "dwell_time": 10.028,
+      "commands": 9,
+      "artefacts_touched": [],
+      "narrative": "Session με προθεση 'honeypot_detection' (deep_plus). Εκτελεσε 9 εντολες σε 10.028s, με path depth 2. Αγγιξε 0 decoys. Παρουσιασε 1 ενεργειες αναβαθμισης προνομιων."
+    },
+    {
+      "session_id": "36ba5e978eff",
+      "ground_truth_intent": "reconnaissance",
+      "depth": "deep_plus",
+      "dwell_time": 10.263,
+      "commands": 10,
+      "artefacts_touched": [],
+      "narrative": "Session με προθεση 'reconnaissance' (deep_plus). Εκτελεσε 10 εντολες σε 10.263s, με path depth 2. Αγγιξε 0 decoys."
+    },
+    {
+      "session_id": "f4ca904ed475",
+      "ground_truth_intent": "privilege_escalation",
+      "depth": "deep_plus",
+      "dwell_time": 7.877,
+      "commands": 7,
+      "artefacts_touched": [
+        "/root/NOTES_infra.md"
+      ],
+      "narrative": "Session με προθεση 'privilege_escalation' (deep_plus). Εκτελεσε 7 εντολες σε 7.877s, με path depth 2. Αγγιξε 1 decoys: /root/NOTES_infra.md. Παρουσιασε 6 ενεργειες αναβαθμισης προνομιων."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "recon": {
+    "intent": "reconnaissance",
+    "objective": "Βασικη αναγνωριση συστηματος και ταυτοτητας.",
+    "max_commands": 9
+  },
+  "credential_search": {
+    "intent": "credential_harvesting",
+    "objective": "Αναζητηση κωδικων, κλειδιων και αρχειων ρυθμισεων.",
+    "max_commands": 8
+  },
+  "config_discovery": {
+    "intent": "environment_mapping",
+    "objective": "Χαρτογραφηση υπηρεσιων και ρυθμισεων.",
+    "max_commands": 6
+  },
+  "privilege_escalation": {
+    "intent": "privilege_escalation",
+    "objective": "Προσπαθεια ανοδου προνομιων σε root.",
+    "max_commands": 6
+  },
+  "data_staging": {
+    "intent": "data_exfiltration",
+    "objective": "Εντοπισμος και προετοιμασια δεδομενων για διαρροη.",
+    "max_commands": 5
+  },
+  "lateral_movement": {
+    "intent": "lateral_movement",
+    "objective": "Εντοπισμος και δοκιμη αλλων εσωτερικων συστηματων.",
+    "max_commands": 7
+  },
+  "honeypot_fingerprinting": {
+    "intent": "honeypot_detection",
+    "objective": "Ελεγχος για sandbox/honeypot/VM.",
+    "max_commands": 8
+  }
+}

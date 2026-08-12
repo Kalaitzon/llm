@@ -1,0 +1,155 @@
+{
+  "system_profile": {
+    "hostname": "app-srv-01.corp.local",
+    "os": "Ubuntu 22.04.4 LTS",
+    "openssh": "8.9p1 Ubuntu-3ubuntu0.7",
+    "nginx": "1.18.0 (Ubuntu)",
+    "postgres": "14.11"
+  },
+  "total_artifacts": 12,
+  "llm_generated": 7,
+  "manual": 5,
+  "categories": [
+    "config",
+    "credentials",
+    "docs",
+    "logs",
+    "shell_history",
+    "ssh",
+    "system"
+  ],
+  "artifacts": [
+    {
+      "name": ".bash_history",
+      "virtual_path": "/home/mgeorgiou/.bash_history",
+      "category": "shell_history",
+      "source": "manual",
+      "owner_user": "mgeorgiou",
+      "role_in_story": "Ιστορικο εντολων του sysadmin. Αποκαλυπτει paths, εσωτερικα hosts (db01, cache01) και το αρχειο credentials.",
+      "llm_prompt_ref": null,
+      "unix_mode": "644",
+      "size_bytes": 428
+    },
+    {
+      "name": ".env",
+      "virtual_path": "/opt/app/.env",
+      "category": "credentials",
+      "source": "manual",
+      "owner_user": "svc_deploy",
+      "role_in_story": "Δελεαστικο αρχειο 'μυστικων'. Ολες οι τιμες ειναι εμφανως placeholder/ψευτικες και δειχνουν σε πλασματικα hosts.",
+      "llm_prompt_ref": null,
+      "unix_mode": "640",
+      "size_bytes": 515
+    },
+    {
+      "name": "postgresql-14-main.log",
+      "virtual_path": "/var/log/postgresql/postgresql-14-main.log",
+      "category": "logs",
+      "source": "manual",
+      "owner_user": "postgres",
+      "role_in_story": "Ρεαλιστικο log της PostgreSQL 14. Επιβεβαιωνει εκδοση, database name και εσωτερικη IP της εφαρμογης.",
+      "llm_prompt_ref": null,
+      "unix_mode": "644",
+      "size_bytes": 713
+    },
+    {
+      "name": "known_hosts",
+      "virtual_path": "/home/mgeorgiou/.ssh/known_hosts",
+      "category": "ssh",
+      "source": "manual",
+      "owner_user": "mgeorgiou",
+      "role_in_story": "Αποκαλυπτει την εσωτερικη τοπολογια (4 hosts, IPs) και καθοδηγει προς lateral movement.",
+      "llm_prompt_ref": null,
+      "unix_mode": "644",
+      "size_bytes": 382
+    },
+    {
+      "name": "deploy",
+      "virtual_path": "/etc/cron.d/deploy",
+      "category": "system",
+      "source": "manual",
+      "owner_user": "root",
+      "role_in_story": "Αποκαλυπτει προγραμματισμενες εργασιες, service accounts και μονοπατια scripts (πιθανα σημεια persistence).",
+      "llm_prompt_ref": null,
+      "unix_mode": "644",
+      "size_bytes": 527
+    },
+    {
+      "name": ".bash_history",
+      "virtual_path": "/opt/deploy/.bash_history",
+      "category": "shell_history",
+      "source": "llm",
+      "owner_user": "svc_deploy",
+      "role_in_story": "Ιστορικο του CI/CD λογαριασμου. Δειχνει τη ροη deploy, migrations, cache flush και μεταφορα artifacts στο ci01.",
+      "llm_prompt_ref": "llm_prompts/svc_deploy_bash_history.txt",
+      "unix_mode": "644",
+      "size_bytes": 771
+    },
+    {
+      "name": "app.corp.conf",
+      "virtual_path": "/etc/nginx/sites-available/app.corp.conf",
+      "category": "config",
+      "source": "llm",
+      "owner_user": "mgeorgiou",
+      "role_in_story": "Ρεαλιστικο nginx config. Αποκαλυπτει TLS paths, το backend στο :8000, static root και το εσωτερικο /metrics.",
+      "llm_prompt_ref": "llm_prompts/nginx_site.txt",
+      "unix_mode": "644",
+      "size_bytes": 1216
+    },
+    {
+      "name": "database.yml",
+      "virtual_path": "/opt/app/config/database.yml",
+      "category": "credentials",
+      "source": "llm",
+      "owner_user": "svc_deploy",
+      "role_in_story": "Config βασης. Οι κωδικοι ειναι ρητα placeholders (μερικοι εγχεονται απο ENV), αλλα αποκαλυπτει users app_rw/app_ro και db01.",
+      "llm_prompt_ref": "llm_prompts/database_yml.txt",
+      "unix_mode": "640",
+      "size_bytes": 781
+    },
+    {
+      "name": "auth.log",
+      "virtual_path": "/var/log/auth.log",
+      "category": "logs",
+      "source": "llm",
+      "owner_user": "root",
+      "role_in_story": "Ρεαλιστικο auth.log. Επιβεβαιωνει χρηστες, το admin workstation, sudo χρηση και μια αποτυχημενη συνδεση απο ci01.",
+      "llm_prompt_ref": "llm_prompts/auth_log.txt",
+      "unix_mode": "644",
+      "size_bytes": 942
+    },
+    {
+      "name": "config",
+      "virtual_path": "/home/mgeorgiou/.ssh/config",
+      "category": "ssh",
+      "source": "llm",
+      "owner_user": "mgeorgiou",
+      "role_in_story": "Χαρτης ολοκληρου του εσωτερικου στολου (bastion, db01, cache01, backup01, ci01) και των identity files.",
+      "llm_prompt_ref": "llm_prompts/ssh_config.txt",
+      "unix_mode": "600",
+      "size_bytes": 583
+    },
+    {
+      "name": "deploy_runbook.md",
+      "virtual_path": "/opt/app/runbooks/deploy_runbook.md",
+      "category": "docs",
+      "source": "llm",
+      "owner_user": "svc_deploy",
+      "role_in_story": "Runbook που εξηγει ολη τη ροη production. Πλουσια πηγη intelligence (hosts, service, βαση, cache, rollback).",
+      "llm_prompt_ref": "llm_prompts/deploy_runbook.txt",
+      "unix_mode": "644",
+      "size_bytes": 1006
+    },
+    {
+      "name": "NOTES_infra.md",
+      "virtual_path": "/root/NOTES_infra.md",
+      "category": "docs",
+      "source": "llm",
+      "owner_user": "root",
+      "role_in_story": "Ανθρωπινες, βιαστικες σημειωσεις admin. Δημιουργουν αισθηση επειγοντος και αποκαλυπτουν αδυναμιες (μη-εναλλαγμενο κωδικο).",
+      "llm_prompt_ref": "llm_prompts/infra_notes.txt",
+      "unix_mode": "600",
+      "size_bytes": 771
+    }
+  ]
+}

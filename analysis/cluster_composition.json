@@ -1,0 +1,60 @@
+{
+  "cluster_0": {
+    "size": 11,
+    "intents": {
+      "credential_harvesting": 3,
+      "environment_mapping": 3,
+      "lateral_movement": 5
+    },
+    "depths": {
+      "deep": 5,
+      "deep_plus": 3,
+      "shallow": 3
+    },
+    "avg_artefacts_touched": 2.73,
+    "avg_command_count": 5.64
+  },
+  "cluster_1": {
+    "size": 15,
+    "intents": {
+      "reconnaissance": 2,
+      "credential_harvesting": 2,
+      "environment_mapping": 2,
+      "privilege_escalation": 2,
+      "data_exfiltration": 5,
+      "honeypot_detection": 2
+    },
+    "depths": {
+      "shallow": 11,
+      "deep": 3,
+      "deep_plus": 1
+    },
+    "avg_artefacts_touched": 0.6,
+    "avg_command_count": 3.67
+  },
+  "cluster_2": {
+    "size": 3,
+    "intents": {
+      "privilege_escalation": 3
+    },
+    "depths": {
+      "deep": 2,
+      "deep_plus": 1
+    },
+    "avg_artefacts_touched": 0.33,
+    "avg_command_count": 6.0
+  },
+  "cluster_3": {
+    "size": 6,
+    "intents": {
+      "reconnaissance": 3,
+      "honeypot_detection": 3
+    },
+    "depths": {
+      "deep": 4,
+      "deep_plus": 2
+    },
+    "avg_artefacts_touched": 0.0,
+    "avg_command_count": 7.83
+  }
+}

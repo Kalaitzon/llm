@@ -1,0 +1,8 @@
+Apr 19 08:02:00 app-srv-01 sshd[20141]: Accepted publickey for mgeorgiou from 10.20.5.42 port 51344 ssh2: ED25519 SHA256:9xk...redacted
+Apr 19 08:02:01 app-srv-01 sshd[20141]: pam_unix(sshd:session): session opened for user mgeorgiou(uid=1001) by (uid=0)
+Apr 19 08:04:00 app-srv-01 sudo:  mgeorgiou : TTY=pts/0 ; PWD=/opt/app ; USER=root ; COMMAND=/bin/systemctl restart nginx
+Apr 19 08:04:01 app-srv-01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by mgeorgiou(uid=1001)
+Apr 19 08:16:00 app-srv-01 sshd[20141]: pam_unix(sshd:session): session closed for user mgeorgiou
+Apr 19 08:33:00 app-srv-01 sshd[20460]: Failed password for app_deploy from 10.20.2.15 port 40122 ssh2
+Apr 19 08:33:04 app-srv-01 sshd[20460]: Accepted publickey for svc_deploy from 10.20.2.15 port 40124 ssh2: RSA SHA256:aa...redacted
+Apr 19 09:02:00 app-srv-01 CRON[20988]: pam_unix(cron:session): session opened for user backup(uid=1501) by (uid=0)

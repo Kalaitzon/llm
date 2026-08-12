@@ -1,0 +1,1 @@
+Write a concise internal deployment runbook (Markdown) for the 'app' service on app-srv-01. Cover: pulling the release, running migrations against db01 (PostgreSQL 14), restarting the systemd service, clearing the Redis cache on cache01, and rollback. Mention the CI host ci01. Professional tone, realistic, no real secrets.

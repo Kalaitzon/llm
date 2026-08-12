@@ -1,0 +1,1 @@
+Write a short, slightly messy internal infrastructure notes / TODO file (Markdown) by a sysadmin. Include a few pending security tasks (rotate a credential, patch a service), a known issue, and maintenance windows. It should feel human and hurried, consistent with a Internal Corp Ubuntu 22.04 stack (OpenSSH 8.9, nginx 1.18, PostgreSQL 14). No real secrets.

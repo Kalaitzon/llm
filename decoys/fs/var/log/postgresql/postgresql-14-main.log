@@ -1,0 +1,8 @@
+2026-04-18 02:05:00 UTC [12000] LOG:  database system is ready to accept connections
+2026-04-18 02:12:00 UTC [12001] LOG:  checkpoint starting: time
+2026-04-18 02:19:00 UTC [12002] LOG:  checkpoint complete: wrote 421 buffers (2.6%)
+2026-04-18 02:26:00 UTC [12003] LOG:  connection received: host=10.20.1.5 port=54210
+2026-04-18 02:33:00 UTC [12004] LOG:  connection authorized: user=app_rw database=app_production
+2026-04-18 02:40:00 UTC [12005] LOG:  duration: 1243.551 ms  statement: SELECT * FROM orders WHERE status='pending'
+2026-04-18 02:47:00 UTC [12006] LOG:  automatic vacuum of table "app_production.public.sessions"
+2026-04-18 02:54:00 UTC [12007] WARNING:  there is already a transaction in progress

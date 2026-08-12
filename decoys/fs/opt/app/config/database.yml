@@ -1,0 +1,34 @@
+# /opt/app/config/database.yml
+# Passwords here are PLACEHOLDERS injected by CI at deploy time.
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("DB_POOL", 10) %>
+  host: db01.corp.local
+  port: 5432
+
+development:
+  <<: *default
+  database: app_development
+  username: app_rw
+  password: dev_placeholder_change_me
+
+test:
+  <<: *default
+  database: app_test
+  username: app_rw
+  password: test_placeholder_change_me
+
+production:
+  primary:
+    <<: *default
+    database: app_production
+    username: app_rw
+    password: <%= ENV["DATABASE_PASSWORD"] %>   # injected, not stored
+  replica:
+    <<: *default
+    database: app_production
+    username: app_ro
+    password: <%= ENV["DATABASE_RO_PASSWORD"] %>
+    replica: true
+    host: db01.corp.local

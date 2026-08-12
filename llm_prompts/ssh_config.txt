@@ -1,0 +1,1 @@
+Generate a realistic ~/.ssh/config for a sysadmin (mgeorgiou) managing an internal fleet: db01, cache01, backup01, ci01 on corp.local (10.20.x). Include Host aliases, User, IdentityFile, ProxyJump via a bastion, and sensible options. No real keys.

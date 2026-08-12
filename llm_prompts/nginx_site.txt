@@ -1,0 +1,1 @@
+Generate a realistic nginx server block for a production site on app-srv-01 (nginx 1.18.0, Ubuntu). It reverse-proxies to a local app on 127.0.0.1:8000, serves static files from /opt/app/public, has TLS, an internal /metrics location restricted to 10.20.0.0/16, and references an upstream to db01/cache01 indirectly. Realistic comments, no real secrets.
