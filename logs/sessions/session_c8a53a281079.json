@@ -1,0 +1,101 @@
+{
+  "session_id": "c8a53a281079",
+  "src_ip": "127.0.0.1",
+  "src_port": 56055,
+  "start_time": "2026-07-11T23:52:42.831591+0000",
+  "end_time": "2026-07-11T23:52:48.482273+0000",
+  "duration_seconds": 5.651,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "root",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:52:42.848612+0000",
+        "username": "root",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 6,
+  "commands": [
+    "history",
+    "cat /opt/app/.env",
+    "grep -r password /opt/app",
+    "cat /home/mgeorgiou/.ssh/config",
+    "find / -name '*.env'",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/home/mgeorgiou/.bash_history",
+    "/opt/app/.env",
+    "/opt/app/config/database.yml",
+    "/home/mgeorgiou/.ssh/config"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:52:43.254073+0000",
+      "type": "command",
+      "input": "history",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 553,
+      "artefacts_touched": [
+        "/home/mgeorgiou/.bash_history"
+      ]
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:52:44.443499+0000",
+      "type": "command",
+      "input": "cat /opt/app/.env",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 514,
+      "artefacts_touched": [
+        "/opt/app/.env"
+      ]
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:52:45.513812+0000",
+      "type": "command",
+      "input": "grep -r password /opt/app",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 458,
+      "artefacts_touched": [
+        "/opt/app/.env",
+        "/opt/app/config/database.yml"
+      ]
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:52:46.445885+0000",
+      "type": "command",
+      "input": "cat /home/mgeorgiou/.ssh/config",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 582,
+      "artefacts_touched": [
+        "/home/mgeorgiou/.ssh/config"
+      ]
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:52:47.582038+0000",
+      "type": "command",
+      "input": "find / -name '*.env'",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 13,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 6,
+      "time": "2026-07-11T23:52:48.480607+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

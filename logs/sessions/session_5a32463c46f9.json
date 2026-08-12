@@ -1,0 +1,81 @@
+{
+  "session_id": "5a32463c46f9",
+  "src_ip": "127.0.0.1",
+  "src_port": 50879,
+  "start_time": "2026-07-11T23:54:07.703257+0000",
+  "end_time": "2026-07-11T23:54:13.045759+0000",
+  "duration_seconds": 5.343,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "mgeorgiou",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:54:07.716091+0000",
+        "username": "mgeorgiou",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 5,
+  "commands": [
+    "ls -la /opt/app",
+    "find /opt/app -type f",
+    "cat /opt/app/runbooks/deploy_runbook.md",
+    "du -sh /opt/app",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/opt/app/runbooks/deploy_runbook.md"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:54:08.126573+0000",
+      "type": "command",
+      "input": "ls -la /opt/app",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 290,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:54:09.223286+0000",
+      "type": "command",
+      "input": "find /opt/app -type f",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 78,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:54:10.388052+0000",
+      "type": "command",
+      "input": "cat /opt/app/runbooks/deploy_runbook.md",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 1005,
+      "artefacts_touched": [
+        "/opt/app/runbooks/deploy_runbook.md"
+      ]
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:54:11.591078+0000",
+      "type": "command",
+      "input": "du -sh /opt/app",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 21,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:54:13.043806+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

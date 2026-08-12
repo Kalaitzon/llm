@@ -1,0 +1,101 @@
+{
+  "session_id": "f4ca904ed475",
+  "src_ip": "127.0.0.1",
+  "src_port": 50873,
+  "start_time": "2026-07-11T23:53:45.383831+0000",
+  "end_time": "2026-07-11T23:53:53.261216+0000",
+  "duration_seconds": 7.877,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "mgeorgiou",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:53:45.403986+0000",
+        "username": "mgeorgiou",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 7,
+  "commands": [
+    "sudo -l",
+    "cat /etc/passwd",
+    "cat /etc/shadow",
+    "find / -perm -4000",
+    "sudo cat /etc/shadow",
+    "sudo cat /root/NOTES_infra.md",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/root/NOTES_infra.md"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:53:45.808583+0000",
+      "type": "command",
+      "input": "sudo -l",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 196,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:53:46.827519+0000",
+      "type": "command",
+      "input": "cat /etc/passwd",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 461,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:53:48.118242+0000",
+      "type": "command",
+      "input": "cat /etc/shadow",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 35,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:53:49.626570+0000",
+      "type": "command",
+      "input": "find / -perm -4000",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 477,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:53:50.701320+0000",
+      "type": "command",
+      "input": "sudo cat /etc/shadow",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 43,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 6,
+      "time": "2026-07-11T23:53:51.928963+0000",
+      "type": "command",
+      "input": "sudo cat /root/NOTES_infra.md",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 770,
+      "artefacts_touched": [
+        "/root/NOTES_infra.md"
+      ]
+    },
+    {
+      "seq": 7,
+      "time": "2026-07-11T23:53:53.259664+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

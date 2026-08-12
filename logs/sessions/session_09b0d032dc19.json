@@ -1,0 +1,117 @@
+{
+  "session_id": "09b0d032dc19",
+  "src_ip": "127.0.0.1",
+  "src_port": 50889,
+  "start_time": "2026-07-11T23:54:39.936957+0000",
+  "end_time": "2026-07-11T23:54:48.601737+0000",
+  "duration_seconds": 8.665,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "admin",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:54:39.943106+0000",
+        "username": "admin",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 8,
+  "commands": [
+    "cat /etc/hosts",
+    "cat /home/mgeorgiou/.ssh/known_hosts",
+    "cat /home/mgeorgiou/.ssh/config",
+    "cat /var/log/auth.log",
+    "ssh db01.corp.local",
+    "ping -c 2 10.20.1.10",
+    "ssh cache01.corp.local",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/home/mgeorgiou/.ssh/known_hosts",
+    "/home/mgeorgiou/.ssh/config",
+    "/var/log/auth.log"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:54:40.346624+0000",
+      "type": "command",
+      "input": "cat /etc/hosts",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 204,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:54:41.555760+0000",
+      "type": "command",
+      "input": "cat /home/mgeorgiou/.ssh/known_hosts",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 381,
+      "artefacts_touched": [
+        "/home/mgeorgiou/.ssh/known_hosts"
+      ]
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:54:42.531807+0000",
+      "type": "command",
+      "input": "cat /home/mgeorgiou/.ssh/config",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 582,
+      "artefacts_touched": [
+        "/home/mgeorgiou/.ssh/config"
+      ]
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:54:44.031649+0000",
+      "type": "command",
+      "input": "cat /var/log/auth.log",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 941,
+      "artefacts_touched": [
+        "/var/log/auth.log"
+      ]
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:54:45.193276+0000",
+      "type": "command",
+      "input": "ssh db01.corp.local",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 66,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 6,
+      "time": "2026-07-11T23:54:46.503875+0000",
+      "type": "command",
+      "input": "ping -c 2 10.20.1.10",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 23,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 7,
+      "time": "2026-07-11T23:54:47.450241+0000",
+      "type": "command",
+      "input": "ssh cache01.corp.local",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 69,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 8,
+      "time": "2026-07-11T23:54:48.599417+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

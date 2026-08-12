@@ -1,0 +1,67 @@
+{
+  "session_id": "30cd1b5fa5ab",
+  "src_ip": "127.0.0.1",
+  "src_port": 50890,
+  "start_time": "2026-07-11T23:54:49.302373+0000",
+  "end_time": "2026-07-11T23:54:53.534153+0000",
+  "duration_seconds": 4.232,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "ubuntu",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:54:49.325870+0000",
+        "username": "ubuntu",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 4,
+  "commands": [
+    "uname -a",
+    "cat /proc/version",
+    "ls -la /.dockerenv",
+    "exit"
+  ],
+  "artefacts_touched": [],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:54:49.729530+0000",
+      "type": "command",
+      "input": "uname -a",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 92,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:54:50.749126+0000",
+      "type": "command",
+      "input": "cat /proc/version",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 86,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:54:52.158698+0000",
+      "type": "command",
+      "input": "ls -la /.dockerenv",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 58,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:54:53.532925+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

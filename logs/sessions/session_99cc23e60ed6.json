@@ -1,0 +1,57 @@
+{
+  "session_id": "99cc23e60ed6",
+  "src_ip": "127.0.0.1",
+  "src_port": 50875,
+  "start_time": "2026-07-11T23:53:53.989812+0000",
+  "end_time": "2026-07-11T23:53:56.750375+0000",
+  "duration_seconds": 2.761,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "admin",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:53:54.009126+0000",
+        "username": "admin",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 3,
+  "commands": [
+    "ls -la /opt/app",
+    "find /opt/app -type f",
+    "exit"
+  ],
+  "artefacts_touched": [],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:53:54.418839+0000",
+      "type": "command",
+      "input": "ls -la /opt/app",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 250,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:53:55.858171+0000",
+      "type": "command",
+      "input": "find /opt/app -type f",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 78,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:53:56.748380+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

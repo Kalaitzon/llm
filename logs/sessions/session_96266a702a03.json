@@ -1,0 +1,117 @@
+{
+  "session_id": "96266a702a03",
+  "src_ip": "127.0.0.1",
+  "src_port": 50897,
+  "start_time": "2026-07-11T23:55:15.184108+0000",
+  "end_time": "2026-07-11T23:55:25.212173+0000",
+  "duration_seconds": 10.028,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "mgeorgiou",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:55:15.209623+0000",
+        "username": "mgeorgiou",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 9,
+  "commands": [
+    "uname -a",
+    "cat /proc/version",
+    "ls -la /.dockerenv",
+    "ps aux",
+    "cat /etc/shadow",
+    "ip addr",
+    "cat /etc/mtab",
+    "cat /proc/cpuinfo",
+    "exit"
+  ],
+  "artefacts_touched": [],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:55:15.613812+0000",
+      "type": "command",
+      "input": "uname -a",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 92,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:55:16.505037+0000",
+      "type": "command",
+      "input": "cat /proc/version",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 86,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:55:17.550119+0000",
+      "type": "command",
+      "input": "ls -la /.dockerenv",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 58,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:55:18.981586+0000",
+      "type": "command",
+      "input": "ps aux",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 562,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:55:20.130723+0000",
+      "type": "command",
+      "input": "cat /etc/shadow",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 35,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 6,
+      "time": "2026-07-11T23:55:21.408953+0000",
+      "type": "command",
+      "input": "ip addr",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 166,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 7,
+      "time": "2026-07-11T23:55:22.885762+0000",
+      "type": "command",
+      "input": "cat /etc/mtab",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 41,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 8,
+      "time": "2026-07-11T23:55:24.017316+0000",
+      "type": "command",
+      "input": "cat /proc/cpuinfo",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 45,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 9,
+      "time": "2026-07-11T23:55:25.210047+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

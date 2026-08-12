@@ -1,0 +1,107 @@
+{
+  "session_id": "216085902062",
+  "src_ip": "127.0.0.1",
+  "src_port": 64189,
+  "start_time": "2026-07-11T23:52:06.773029+0000",
+  "end_time": "2026-07-11T23:52:15.136364+0000",
+  "duration_seconds": 8.363,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "admin",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:52:06.801030+0000",
+        "username": "admin",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 8,
+  "commands": [
+    "whoami",
+    "id",
+    "uname -a",
+    "hostname",
+    "cat /etc/os-release",
+    "ps aux",
+    "ss -tlnp",
+    "exit"
+  ],
+  "artefacts_touched": [],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:52:07.205309+0000",
+      "type": "command",
+      "input": "whoami",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 5,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:52:08.426421+0000",
+      "type": "command",
+      "input": "id",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 82,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:52:09.794565+0000",
+      "type": "command",
+      "input": "uname -a",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 92,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:52:10.727773+0000",
+      "type": "command",
+      "input": "hostname",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 10,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:52:12.122383+0000",
+      "type": "command",
+      "input": "cat /etc/os-release",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 130,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 6,
+      "time": "2026-07-11T23:52:13.224877+0000",
+      "type": "command",
+      "input": "ps aux",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 562,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 7,
+      "time": "2026-07-11T23:52:14.171747+0000",
+      "type": "command",
+      "input": "ss -tlnp",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 383,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 8,
+      "time": "2026-07-11T23:52:15.133660+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

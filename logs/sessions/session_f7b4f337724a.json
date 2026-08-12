@@ -1,0 +1,87 @@
+{
+  "session_id": "f7b4f337724a",
+  "src_ip": "127.0.0.1",
+  "src_port": 50896,
+  "start_time": "2026-07-11T23:55:08.528700+0000",
+  "end_time": "2026-07-11T23:55:14.484051+0000",
+  "duration_seconds": 5.955,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "admin",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:55:08.535032+0000",
+        "username": "admin",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 6,
+  "commands": [
+    "uname -a",
+    "cat /proc/version",
+    "ls -la /.dockerenv",
+    "ps aux",
+    "ip addr",
+    "exit"
+  ],
+  "artefacts_touched": [],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:55:08.938060+0000",
+      "type": "command",
+      "input": "uname -a",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 92,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:55:10.144074+0000",
+      "type": "command",
+      "input": "cat /proc/version",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 86,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:55:11.119323+0000",
+      "type": "command",
+      "input": "ls -la /.dockerenv",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 58,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:55:12.014916+0000",
+      "type": "command",
+      "input": "ps aux",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 562,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:55:13.469938+0000",
+      "type": "command",
+      "input": "ip addr",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 166,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 6,
+      "time": "2026-07-11T23:55:14.481214+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

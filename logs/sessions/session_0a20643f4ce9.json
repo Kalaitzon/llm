@@ -1,0 +1,107 @@
+{
+  "session_id": "0a20643f4ce9",
+  "src_ip": "127.0.0.1",
+  "src_port": 50866,
+  "start_time": "2026-07-11T23:53:18.689582+0000",
+  "end_time": "2026-07-11T23:53:25.444050+0000",
+  "duration_seconds": 6.754,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "mgeorgiou",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:53:18.706118+0000",
+        "username": "mgeorgiou",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 7,
+  "commands": [
+    "cat /etc/hosts",
+    "cat /etc/nginx/sites-available/app.corp.conf",
+    "ls -la /etc",
+    "find /etc -name '*.conf'",
+    "cat /etc/cron.d/deploy",
+    "cat /var/log/postgresql/postgresql-14-main.log",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/etc/nginx/sites-available/app.corp.conf",
+    "/etc/cron.d/deploy",
+    "/var/log/postgresql/postgresql-14-main.log"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:53:19.112239+0000",
+      "type": "command",
+      "input": "cat /etc/hosts",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 204,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:53:20.389018+0000",
+      "type": "command",
+      "input": "cat /etc/nginx/sites-available/app.corp.conf",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 1215,
+      "artefacts_touched": [
+        "/etc/nginx/sites-available/app.corp.conf"
+      ]
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:53:21.311453+0000",
+      "type": "command",
+      "input": "ls -la /etc",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 229,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:53:22.174414+0000",
+      "type": "command",
+      "input": "find /etc -name '*.conf'",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 83,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:53:23.535059+0000",
+      "type": "command",
+      "input": "cat /etc/cron.d/deploy",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 526,
+      "artefacts_touched": [
+        "/etc/cron.d/deploy"
+      ]
+    },
+    {
+      "seq": 6,
+      "time": "2026-07-11T23:53:24.425616+0000",
+      "type": "command",
+      "input": "cat /var/log/postgresql/postgresql-14-main.log",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 712,
+      "artefacts_touched": [
+        "/var/log/postgresql/postgresql-14-main.log"
+      ]
+    },
+    {
+      "seq": 7,
+      "time": "2026-07-11T23:53:25.443220+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

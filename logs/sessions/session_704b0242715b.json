@@ -1,0 +1,25 @@
+{
+  "session_id": "704b0242715b",
+  "src_ip": "127.0.0.1",
+  "src_port": 50895,
+  "start_time": "2026-07-11T23:55:08.518986+0000",
+  "end_time": "2026-07-11T23:55:25.929696+0000",
+  "duration_seconds": 17.411,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": null,
+    "success": false,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:55:08.527121+0000",
+        "username": "admin",
+        "method": "password",
+        "credential_sample": "123456"
+      }
+    ]
+  },
+  "command_count": 0,
+  "commands": [],
+  "artefacts_touched": [],
+  "events": []
+}

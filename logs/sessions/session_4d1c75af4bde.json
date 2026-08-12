@@ -1,0 +1,87 @@
+{
+  "session_id": "4d1c75af4bde",
+  "src_ip": "127.0.0.1",
+  "src_port": 50872,
+  "start_time": "2026-07-11T23:53:37.540939+0000",
+  "end_time": "2026-07-11T23:53:44.680965+0000",
+  "duration_seconds": 7.14,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "root",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:53:37.546006+0000",
+        "username": "root",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 6,
+  "commands": [
+    "sudo -l",
+    "cat /etc/passwd",
+    "cat /etc/shadow",
+    "find / -perm -4000",
+    "sudo cat /etc/shadow",
+    "exit"
+  ],
+  "artefacts_touched": [],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:53:37.948305+0000",
+      "type": "command",
+      "input": "sudo -l",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 186,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:53:39.407233+0000",
+      "type": "command",
+      "input": "cat /etc/passwd",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 461,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:53:40.772623+0000",
+      "type": "command",
+      "input": "cat /etc/shadow",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 35,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:53:41.988738+0000",
+      "type": "command",
+      "input": "find / -perm -4000",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 477,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:53:43.333548+0000",
+      "type": "command",
+      "input": "sudo cat /etc/shadow",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 43,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 6,
+      "time": "2026-07-11T23:53:44.679458+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

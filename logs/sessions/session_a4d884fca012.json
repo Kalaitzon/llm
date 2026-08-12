@@ -1,0 +1,78 @@
+{
+  "session_id": "a4d884fca012",
+  "src_ip": "127.0.0.1",
+  "src_port": 64193,
+  "start_time": "2026-07-11T23:52:26.838308+0000",
+  "end_time": "2026-07-11T23:52:30.942296+0000",
+  "duration_seconds": 4.104,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "admin",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:52:26.845753+0000",
+        "username": "admin",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 4,
+  "commands": [
+    "history",
+    "cat /opt/app/.env",
+    "grep -r password /opt/app",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/home/mgeorgiou/.bash_history",
+    "/opt/app/.env",
+    "/opt/app/config/database.yml"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:52:27.260759+0000",
+      "type": "command",
+      "input": "history",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 553,
+      "artefacts_touched": [
+        "/home/mgeorgiou/.bash_history"
+      ]
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:52:28.753935+0000",
+      "type": "command",
+      "input": "cat /opt/app/.env",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 514,
+      "artefacts_touched": [
+        "/opt/app/.env"
+      ]
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:52:29.739513+0000",
+      "type": "command",
+      "input": "grep -r password /opt/app",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 458,
+      "artefacts_touched": [
+        "/opt/app/.env",
+        "/opt/app/config/database.yml"
+      ]
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:52:30.939902+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "session_id": "168c3f796c5e",
+  "src_ip": "127.0.0.1",
+  "src_port": 50861,
+  "start_time": "2026-07-11T23:53:02.101779+0000",
+  "end_time": "2026-07-11T23:53:05.359777+0000",
+  "duration_seconds": 3.258,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "mgeorgiou",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:53:02.117742+0000",
+        "username": "mgeorgiou",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 3,
+  "commands": [
+    "cat /etc/hosts",
+    "cat /etc/nginx/sites-available/app.corp.conf",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/etc/nginx/sites-available/app.corp.conf"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:53:02.521074+0000",
+      "type": "command",
+      "input": "cat /etc/hosts",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 204,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:53:04.026624+0000",
+      "type": "command",
+      "input": "cat /etc/nginx/sites-available/app.corp.conf",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 1215,
+      "artefacts_touched": [
+        "/etc/nginx/sites-available/app.corp.conf"
+      ]
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:53:05.358854+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

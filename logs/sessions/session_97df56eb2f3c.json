@@ -1,0 +1,84 @@
+{
+  "session_id": "97df56eb2f3c",
+  "src_ip": "127.0.0.1",
+  "src_port": 50865,
+  "start_time": "2026-07-11T23:53:12.633247+0000",
+  "end_time": "2026-07-11T23:53:17.986703+0000",
+  "duration_seconds": 5.353,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "root",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:53:12.649596+0000",
+        "username": "root",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 5,
+  "commands": [
+    "cat /etc/hosts",
+    "cat /etc/nginx/sites-available/app.corp.conf",
+    "find /etc -name '*.conf'",
+    "cat /etc/cron.d/deploy",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/etc/nginx/sites-available/app.corp.conf",
+    "/etc/cron.d/deploy"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:53:13.051796+0000",
+      "type": "command",
+      "input": "cat /etc/hosts",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 204,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:53:14.473315+0000",
+      "type": "command",
+      "input": "cat /etc/nginx/sites-available/app.corp.conf",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 1215,
+      "artefacts_touched": [
+        "/etc/nginx/sites-available/app.corp.conf"
+      ]
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:53:15.395915+0000",
+      "type": "command",
+      "input": "find /etc -name '*.conf'",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 83,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:53:16.854352+0000",
+      "type": "command",
+      "input": "cat /etc/cron.d/deploy",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 526,
+      "artefacts_touched": [
+        "/etc/cron.d/deploy"
+      ]
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:53:17.984323+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

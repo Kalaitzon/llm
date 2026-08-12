@@ -1,0 +1,97 @@
+{
+  "session_id": "70ff203606bb",
+  "src_ip": "127.0.0.1",
+  "src_port": 50887,
+  "start_time": "2026-07-11T23:54:33.401516+0000",
+  "end_time": "2026-07-11T23:54:39.213760+0000",
+  "duration_seconds": 5.812,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "root",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:54:33.409686+0000",
+        "username": "root",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 6,
+  "commands": [
+    "cat /etc/hosts",
+    "cat /home/mgeorgiou/.ssh/known_hosts",
+    "cat /home/mgeorgiou/.ssh/config",
+    "cat /var/log/auth.log",
+    "ssh db01.corp.local",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/home/mgeorgiou/.ssh/known_hosts",
+    "/home/mgeorgiou/.ssh/config",
+    "/var/log/auth.log"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:54:33.814357+0000",
+      "type": "command",
+      "input": "cat /etc/hosts",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 204,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:54:34.867859+0000",
+      "type": "command",
+      "input": "cat /home/mgeorgiou/.ssh/known_hosts",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 381,
+      "artefacts_touched": [
+        "/home/mgeorgiou/.ssh/known_hosts"
+      ]
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:54:36.026706+0000",
+      "type": "command",
+      "input": "cat /home/mgeorgiou/.ssh/config",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 582,
+      "artefacts_touched": [
+        "/home/mgeorgiou/.ssh/config"
+      ]
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:54:37.283001+0000",
+      "type": "command",
+      "input": "cat /var/log/auth.log",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 941,
+      "artefacts_touched": [
+        "/var/log/auth.log"
+      ]
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:54:38.208567+0000",
+      "type": "command",
+      "input": "ssh db01.corp.local",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 66,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 6,
+      "time": "2026-07-11T23:54:39.211098+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

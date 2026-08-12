@@ -1,0 +1,81 @@
+{
+  "session_id": "cc923faef839",
+  "src_ip": "127.0.0.1",
+  "src_port": 50878,
+  "start_time": "2026-07-11T23:54:01.995175+0000",
+  "end_time": "2026-07-11T23:54:06.999853+0000",
+  "duration_seconds": 5.005,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "root",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:54:02.001786+0000",
+        "username": "root",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 5,
+  "commands": [
+    "ls -la /opt/app",
+    "find /opt/app -type f",
+    "cat /opt/app/runbooks/deploy_runbook.md",
+    "du -sh /opt/app",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/opt/app/runbooks/deploy_runbook.md"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:54:02.408545+0000",
+      "type": "command",
+      "input": "ls -la /opt/app",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 240,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:54:03.382736+0000",
+      "type": "command",
+      "input": "find /opt/app -type f",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 78,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:54:04.689650+0000",
+      "type": "command",
+      "input": "cat /opt/app/runbooks/deploy_runbook.md",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 1005,
+      "artefacts_touched": [
+        "/opt/app/runbooks/deploy_runbook.md"
+      ]
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:54:06.059754+0000",
+      "type": "command",
+      "input": "du -sh /opt/app",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 21,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:54:06.996664+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "session_id": "99bd198133e6",
+  "src_ip": "127.0.0.1",
+  "src_port": 50867,
+  "start_time": "2026-07-11T23:53:26.147080+0000",
+  "end_time": "2026-07-11T23:53:27.869761+0000",
+  "duration_seconds": 1.723,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "ubuntu",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:53:26.151540+0000",
+        "username": "ubuntu",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 2,
+  "commands": [
+    "sudo -l",
+    "exit"
+  ],
+  "artefacts_touched": [],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:53:26.553712+0000",
+      "type": "command",
+      "input": "sudo -l",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 190,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:53:27.868711+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

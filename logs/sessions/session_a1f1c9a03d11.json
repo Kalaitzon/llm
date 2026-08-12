@@ -1,0 +1,61 @@
+{
+  "session_id": "a1f1c9a03d11",
+  "src_ip": "127.0.0.1",
+  "src_port": 50884,
+  "start_time": "2026-07-11T23:54:24.362635+0000",
+  "end_time": "2026-07-11T23:54:27.171712+0000",
+  "duration_seconds": 2.809,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "root",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:54:24.376539+0000",
+        "username": "root",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 3,
+  "commands": [
+    "cat /etc/hosts",
+    "cat /home/mgeorgiou/.ssh/known_hosts",
+    "exit"
+  ],
+  "artefacts_touched": [
+    "/home/mgeorgiou/.ssh/known_hosts"
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:54:24.779553+0000",
+      "type": "command",
+      "input": "cat /etc/hosts",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 204,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:54:25.705370+0000",
+      "type": "command",
+      "input": "cat /home/mgeorgiou/.ssh/known_hosts",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 381,
+      "artefacts_touched": [
+        "/home/mgeorgiou/.ssh/known_hosts"
+      ]
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:54:27.169722+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}

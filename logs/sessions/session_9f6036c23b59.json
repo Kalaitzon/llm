@@ -1,0 +1,77 @@
+{
+  "session_id": "9f6036c23b59",
+  "src_ip": "127.0.0.1",
+  "src_port": 50870,
+  "start_time": "2026-07-11T23:53:32.161414+0000",
+  "end_time": "2026-07-11T23:53:36.834640+0000",
+  "duration_seconds": 4.673,
+  "client_version": "SSH-2.0-paramiko_5.0.0",
+  "auth": {
+    "username": "admin",
+    "success": true,
+    "attempts": [
+      {
+        "time": "2026-07-11T23:53:32.194882+0000",
+        "username": "admin",
+        "method": "password",
+        "credential_sample": "Corp2026!"
+      }
+    ]
+  },
+  "command_count": 5,
+  "commands": [
+    "sudo -l",
+    "cat /etc/shadow",
+    "find / -perm -4000",
+    "sudo cat /etc/shadow",
+    "exit"
+  ],
+  "artefacts_touched": [],
+  "events": [
+    {
+      "seq": 1,
+      "time": "2026-07-11T23:53:32.609168+0000",
+      "type": "command",
+      "input": "sudo -l",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 188,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 2,
+      "time": "2026-07-11T23:53:33.833170+0000",
+      "type": "command",
+      "input": "cat /etc/shadow",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 35,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 3,
+      "time": "2026-07-11T23:53:34.773262+0000",
+      "type": "command",
+      "input": "find / -perm -4000",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 477,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 4,
+      "time": "2026-07-11T23:53:35.877499+0000",
+      "type": "command",
+      "input": "sudo cat /etc/shadow",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 43,
+      "artefacts_touched": []
+    },
+    {
+      "seq": 5,
+      "time": "2026-07-11T23:53:36.833681+0000",
+      "type": "command",
+      "input": "exit",
+      "cwd": "/home/mgeorgiou",
+      "output_bytes": 8,
+      "artefacts_touched": []
+    }
+  ]
+}
