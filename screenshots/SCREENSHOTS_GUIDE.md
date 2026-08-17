@@ -1,6 +1,4 @@
-================================================================
- SCREENSHOTS GUIDE
-================================================================
+SCREENSHOTS GUIDE
 
 The screenshots document the execution of the system. Below is the
 order to follow and the file names.
